@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Blazed';
+    src: url('Blazed.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Georgia', serif; /* Fonte clássica para o corpo do texto */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #2c3e50; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 800px; /* Largura do "jornal" */
+    background-color: #fff; /* Fundo branco para simular papel */
+    border: 1px solid #ccc; /* Borda do jornal */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    margin-top: 20px; /* Margem superior */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.header {
+    background-color: #c0392b; /* Cor de fundo para o cabeçalho */
+    color: #ffffff; /* Texto branco */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+    position: relative; /* Para efeitos de interação */
+    cursor: pointer; /* Cursor em forma de mão */
+}
+
+.header:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra ao passar o mouse */
+}
+
+h1 {
+    font-family: 'Blazed', cursive; /* Fonte estilizada para o título */
+    font-size: 3.5em; /* Tamanho maior */
+    margin: 0; /* Remove margens padrão */
+    text-transform: uppercase; /* Maiúsculas */
+}
+
+.content {
+    display: grid; /* Usar grid para layout */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre quadrados */
+}
+
+.card {
+    background-color: #ffffff; /* Fundo branco para os cards */
+    border: 1px solid #ccc; /* Borda do card */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Esconde conteúdo que ultrapassa */
+    transition: transform 0.3s; /* Transição suave para transformação */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o card ao passar o mouse */
+}
+
+.card img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+}
+
+.card p {
+    padding: 15px; /* Espaçamento interno */
+    color: #34495e; /* Cor do texto */
+}
+
+.card h3 {
+    font-size: 1.5em; /* Tamanho do subtítulo */
+    color: #34495e; /* Cor do subtítulo */
+    margin: 10px; /* Margem em volta */
+}
+
+.highlight {
+    background-color: #e67e22; /* Cor de destaque laranja */
+    color: #ffffff; /* Texto branco */
+    padding: 5px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para citações */
+blockquote {
+    font-style: italic; /* Itálico para citações */
+    border-left: 4px solid #e67e22; /* Borda à esquerda */
+    margin: 20px 0; /* Margem em cima e embaixo */
+    padding-left: 15px; /* Espaçamento interno */
+    color: #34495e; /* Cor da citação */
+}
+
+/* Estilos para botões de navegação */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.button {
+    background-color: #e67e22; /* Cor do botão */
+    color: #ffffff; /* Texto em branco */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+.button:hover {
+    background-color: #d35400; /* Cor mais escura ao passar o mouse */
+}
